@@ -125,7 +125,8 @@ export default StyleSheet.create({
       homeActivitiesBlock:{
         flexDirection:'row',
         marginTop:15,
-        marginBottom:15
+        marginBottom:15,
+        width:'100%'
       },
       homeActivitiesRoundedCircle:{
         padding:10,
@@ -141,7 +142,8 @@ export default StyleSheet.create({
       homeActivitiesBtn:{
         flexDirection:'column',
         alignItems:'center',
-        marginRight:30
+        marginRight:7,
+        width:'33%'
       },
       sendMoneyPersonBtn:{
         alignItems:'center',
@@ -219,5 +221,13 @@ export default StyleSheet.create({
         width:'50%',
         alignItems:'center'
       },
+      moreScreenboxes:{
+        borderBottomWidth:1,
+        borderColor: "#02020221",
+        padding:10,
+        flexDirection: "row",
+        alignContent: "center",
+        alignItems:'center',
+      }
 
 })

@@ -14,7 +14,7 @@ function AuthNavigator(){
         <Stack.Navigator initialRouteName="SplashScreen">
             <Stack.Screen name="SplashScreen" component={SplashScreen} options={{headerShown:false}}/>
             <Stack.Screen name='Login' component={LoginScreen} options={()=>({
-                title:'Irmine Banking',
+                title:'Agency Banking',
                 headerStyle:{backgroundColor:'#d2a418ed'},
                 headerTintColor:'#fff',
                 headerTitleStyle: {fontWeight: 'bold'},
@@ -22,7 +22,7 @@ function AuthNavigator(){
                 
             })}/>
             <Stack.Screen name='OtpConfirmationScreen' component={OtpConfirmationScreen} options={()=>({
-                title:'Irmine Banking',
+                title:'Agency Banking',
                 headerStyle:{backgroundColor:'#d2a418ed'},
                 headerTintColor:'#fff',
                 headerTitleStyle: {fontWeight: 'bold'},

@@ -4,6 +4,8 @@ import StyleSheets from '../assets/StyleSheets';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 function Home() {
     const isDarkMode = useColorScheme() === 'dark';
@@ -25,17 +27,6 @@ function Home() {
                     <View style={StyleSheets.homeIdentityPart}>
                         <Text style={{ fontWeight: 'bold', fontFamily: 'serif' }}>Benjamin Muthamu Victoire</Text>
                         <Text style={{ fontWeight: 'bold', fontSize: 12 }}>Numero ID: 9948573</Text>
-                    </View>
-                    <View style={StyleSheets.homeSoldePart}>
-                        <TouchableOpacity style={StyleSheets.homeDepotBtn}>
-                            <Text style={{ color: '#d2a418ed' }}>Envoie</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={StyleSheets.homeDepotBtn}>
-                            <Text style={{ color: '#d2a418ed' }}>Retrait</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={StyleSheets.homeDepotBtn}>
-                            <Text style={{ color: '#d2a418ed' }}>Depot</Text>
-                        </TouchableOpacity>
                     </View>
                 </View>
                 <View style={StyleSheets.homeCard}>
@@ -75,21 +66,34 @@ function Home() {
                                 <FontAwesome5 name="file-invoice-dollar" size={24} color="#d2a418ed" />
                             </View>
 
-                            <Text style={{ fontWeight: 'bold' }}>Paiement</Text>
-                            <Text style={{ fontWeight: 'bold' }}>Facture</Text>
+                            <Text style={{ fontWeight: 'bold' }}>Paiements</Text>
                         </TouchableOpacity>
 
                     </View>
                     <View style={StyleSheets.homeActivitiesBlock}>
                         <TouchableOpacity style={StyleSheets.homeActivitiesBtn}>
                             <View style={StyleSheets.homeActivitiesRoundedCircle}>
-                                <FontAwesome5 name="boxes" size={24} color="#d2a418ed" />
+                                <MaterialIcons name="save-alt" size={24} color="#d2a418ed" />
                             </View>
 
-                            <Text style={{ fontWeight: 'bold' }}>Paiement</Text>
-                            <Text style={{ fontWeight: 'bold' }}>Marchand</Text>
+                            <Text style={{ fontWeight: 'bold' }}>Depot</Text>
                         </TouchableOpacity>
 
+                        <TouchableOpacity style={StyleSheets.homeActivitiesBtn}>
+                            <View style={StyleSheets.homeActivitiesRoundedCircle}>
+                                <MaterialCommunityIcons name="send-check-outline" size={24} color="#d2a418ed" />
+                            </View>
+
+                            <Text style={{ fontWeight: 'bold' }}>Envoie</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={StyleSheets.homeActivitiesBtn}>
+                            <View style={StyleSheets.homeActivitiesRoundedCircle}>
+                                <FontAwesome5 name="money-check-alt" size={24} color="#d2a418ed" />
+                            </View>
+
+                            <Text style={{ fontWeight: 'bold' }}>Retrait</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>

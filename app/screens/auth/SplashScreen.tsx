@@ -40,7 +40,7 @@ function SplashScreen({navigation}): JSX.Element {
                 backgroundColor={backgroundStyle.backgroundColor}
             />
             <View>
-                <Text style={[StyleSheets.splashScreenTitle]}>Irmine Banking...</Text>
+                <Text style={[StyleSheets.splashScreenTitle]}>Agency Banking...</Text>
                 <ActivityIndicator 
                     animating={animating}
                     color="#FFFFFF"

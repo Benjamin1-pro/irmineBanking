@@ -37,7 +37,7 @@ function MainNavigator() {
         >
 
             <Tabs.Screen name='Home' component={Home} options={()=>({
-                title:'Irmine Banking',
+                title:'Agency Banking',
                 tabBarLabel:'Accueil',
                 headerStyle:{backgroundColor:'#d2a418ed'},
                 headerTintColor:'#fff',
@@ -73,7 +73,7 @@ function MainNavigator() {
                 
             })}/>
             <Tabs.Screen name='MoreScreen' component={MoreScreen} options={()=>({
-                title:'Irmine Banking',
+                title:'Agency Banking',
                 tabBarLabel:'Plus',
                 headerStyle:{backgroundColor:'#d2a418ed'},
                 headerTintColor:'#fff',
